@@ -1,6 +1,6 @@
 package design.pattern.kkb.reflect.case1;
 
-import reflect.Student;
+import design.pattern.kkb.reflect.Student;
 
 /**
  * 获取Class类对象的方式
