@@ -23,7 +23,7 @@ public class ReflectDemo {
 
 	public static void main(String[] args) throws Exception {
 		//获取Class对象
-		Class c = Class.forName("reflect.Student");
+		Class c = Class.forName("design.pattern.kkb.reflect.Student");
 		
 		//获取该类的所有公共变量
 		/*Field[] fields = c.getFields();

@@ -46,7 +46,7 @@ public class ReflectDemo {
 		System.out.println(c1.equals(c3));
 
 		//c）通过静态方法获取，使用字符串表示的类名
-		Class c4 = Class.forName("reflect.Student");
+		Class c4 = Class.forName("design.pattern.kkb.reflect.Student");
 		System.out.println(c1 == c4);
 	}
 

@@ -1,5 +1,7 @@
 package valatile;
 
+import java.util.Scanner;
+
 /**
  * @author da xiong
  * @date 2019/3/8 18:30
@@ -19,9 +21,23 @@ public class Volatile implements Runnable{
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Volatile voletile = new Volatile();
-        new Thread(voletile,"thread A").start();
-        System.out.println("main ");
+        Volatile aVolatile = new Volatile();
+        new Thread(aVolatile,"thread A").start();
+        System.out.println("main 线程正在运行") ;
 
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNext()){
+            String value = sc.next();
+            if(value.equals("1")){
+                new Thread(() -> aVolatile.stopThread()).start();
+                break ;
+            }
+        }
+        System.out.println("主线程退出了！");
+
+    }
+
+    private void stopThread(){
+        flag = false ;
     }
 }

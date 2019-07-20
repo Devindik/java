@@ -22,7 +22,7 @@ public class ReflectDemo {
 
 	public static void main(String[] args) throws Exception {
 		//获取Class对象
-		Class c = Class.forName("reflect.Student");
+		Class c = Class.forName("design.pattern.kkb.reflect.Student");
 		
 		//getDeclaredMethods()：获取所有公共方法
 		//会将父类的公共方法都获取到

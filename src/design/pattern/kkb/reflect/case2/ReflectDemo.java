@@ -21,7 +21,7 @@ public class ReflectDemo {
 
 	public static void main(String[] args) throws Exception {
 		//获取Class对象
-		Class c = Class.forName("reflect.Student");
+		Class c = Class.forName("design.pattern.kkb.reflect.Student");
 		
 		//获取Student类的构造方法
 		//Constructor[] constructors = c.getConstructors();
