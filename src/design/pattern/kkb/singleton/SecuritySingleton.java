@@ -1,4 +1,4 @@
-package design.pattern.singleton;
+package design.pattern.kkb.singleton;
 
 /**
  * @author da xiong
